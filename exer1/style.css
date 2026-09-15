@@ -1,0 +1,12 @@
+header {
+  display: flex;
+  gap: 0.5rem;
+}
+
+header h1 {
+  color: gray;
+}
+
+header .navi {
+    align0
+}
