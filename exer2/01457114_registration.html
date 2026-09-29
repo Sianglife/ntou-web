@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Online Registration Form</title>
+  </head>
+  <body>
+    <h1>Online Registration Form</h1>
+
+    <form target="_self" method="get">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <p>Full Name<b class="required">*</b></p>
+        <input
+          type="text"
+          pattern="[A-Za-z\s]+"
+          required
+          title="Only accept letters and spaces"
+        />
+
+        <p>Email Address<b class="required">*</b></p>
+        <input type="email" required />
+
+        <p>Mobile Phone Number<b class="required">*</b></p>
+        <input
+          type="tel"
+          required
+          pattern="^09\d{2}-\d{3}-\d{3}$"
+          title="Must be all numbers and starts with 09. 10 digits in total and in format of 0911-111-111, i.e. using ‘-‘ as delimiter"
+        />
+
+        <p>Event Date<b class="required">*</b></p>
+        <input type="date" required min="2026-09-29" max="2026-10-31" />
+      </fieldset>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
